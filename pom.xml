@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.linkedin</groupId>
-  <artifactId>scanns</artifactId>
-  <version>2.12</version>
+  <artifactId>scanns-2.11</artifactId>
+  <version>2.4.4</version>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -13,7 +13,8 @@
     <scala.version>2.11.8</scala.version>
     <scala.binary.version>2.11</scala.binary.version>
     <spark.tdw.version>3.12.0</spark.tdw.version>
-    <spark.community.version>2.3.0</spark.community.version>
+    <spark.tencent.version>2.4.4</spark.tencent.version>
+    <spark.community.version>2.4.4</spark.community.version>
     <hbase.tdw.version>0.98.6.1-tdw-0.1</hbase.tdw.version>
     <compile.scope>provided</compile.scope>
   </properties>
@@ -49,9 +50,9 @@
       <version>0.11.2</version>
     </dependency>-->
     <dependency>
-      <groupId>com.tencent.tdw</groupId>
+      <groupId>com.tencent.spark</groupId>
       <artifactId>spark-core_${scala.binary.version}</artifactId>
-      <version>${spark.tdw.version}</version>
+      <version>${spark.tencent.version}</version>
       <exclusions>
         <exclusion>
           <groupId>org.apache.struts</groupId>
@@ -73,9 +74,9 @@
       <scope>${compile.scope}</scope>
     </dependency>
     <dependency>
-      <groupId>com.tencent.tdw</groupId>
+      <groupId>com.tencent.spark</groupId>
       <artifactId>spark-sql_${scala.binary.version}</artifactId>
-      <version>${spark.tdw.version}</version>
+      <version>${spark.tencent.version}</version>
       <exclusions>
         <exclusion>
           <artifactId>jackson-core</artifactId>
@@ -89,9 +90,9 @@
       <scope>${compile.scope}</scope>
     </dependency>
     <dependency>
-      <groupId>com.tencent.tdw</groupId>
+      <groupId>com.tencent.spark</groupId>
       <artifactId>spark-streaming_${scala.binary.version}</artifactId>
-      <version>${spark.tdw.version}</version>
+      <version>${spark.tencent.version}</version>
       <exclusions>
         <exclusion>
           <artifactId>jackson-core</artifactId>
@@ -105,9 +106,9 @@
       <scope>${compile.scope}</scope>
     </dependency>
     <dependency>
-      <groupId>com.tencent.tdw</groupId>
+      <groupId>com.tencent.spark</groupId>
       <artifactId>spark-mllib_${scala.binary.version}</artifactId>
-      <version>${spark.tdw.version}</version>
+      <version>${spark.tencent.version}</version>
       <exclusions>
         <exclusion>
           <artifactId>jackson-core</artifactId>
@@ -121,9 +122,9 @@
       <scope>${compile.scope}</scope>
     </dependency>
     <dependency>
-      <groupId>com.tencent.tdw</groupId>
+      <groupId>com.tencent.spark</groupId>
       <artifactId>spark-graphx_${scala.binary.version}</artifactId>
-      <version>${spark.tdw.version}</version>
+      <version>${spark.tencent.version}</version>
       <exclusions>
         <exclusion>
           <artifactId>jackson-core</artifactId>
